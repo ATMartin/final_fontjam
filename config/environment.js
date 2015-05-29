@@ -4,7 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'font-jam',
     environment: environment,
-    baseURL: '/',
+    //baseURL: '/',
+    baseURL: '/final_fontjam',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -40,7 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/final_fontjam/';
   }
 
   return ENV;
